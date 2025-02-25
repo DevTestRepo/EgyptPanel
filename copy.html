@@ -22,14 +22,7 @@
       <div id="ar-prompt">
           <img src="ar_hand_prompt.png">
       </div>
-      <div class="controls" ,="" id="color-controls" style="vertical-align:middle;margin:0px 10px " >
-        <img src="./Img/Colors/0.png" width="45" height="45" data-color="#83675C" ></button>
-        <img src="./Img/Colors/1.png" width="45" height="45" data-color="#513121" ></button>
-        <img src="./Img/Colors/2.png" width="45" height="45" data-color="#727272" ></button>
-        <img src="./Img/Colors/3.png" width="45" height="45" data-color="#000000"></button>
-        <img src="./Img/Colors/4.png" width="45" height="45" data-color="#DAB892"  ></button>
-        <img src="./Img/Colors/5.png"  width="45" height="45"  data-color="#FFFFFF" ></button>
-      </div>
+      
     </model-viewer> 
     <script>
       var id2 = sessionStorage.getItem("id");
@@ -42,21 +35,7 @@
 
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
 
-    <script>
-      const modelViewerColor = document.querySelector("model-viewer#color");
-      
-      document.querySelector('#color-controls').addEventListener('click', (event) => {
-        const colorString = event.target.dataset.color;
-        console.log(colorString);
-        const material1 = modelViewerColor.model.materials[1];
-       // const material2 = modelViewerColor.model.materials[2];
-        material1.pbrMetallicRoughness.setBaseColorFactor(colorString);
-       /* if(material2!=null)
-        material2.pbrMetallicRoughness.setBaseColorFactor(colorString);*/
-
-
-      });
-      </script>
+   
       
   </body>
 
