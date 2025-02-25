@@ -30,6 +30,10 @@
             transform: translateX(-50%);
             font-size: 2rem;
             margin: 0;
+            white-space: nowrap; /* Prevents text from breaking into two lines */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 90vw; /* Ensures it doesn't exceed screen width */
         }
 
         .container {
@@ -61,8 +65,8 @@
 
     <ol class="container">
         <li>
-            <img src="./Img/A.png" width="100" height="100" alt="" onclick="image(this.id)" id="./Pannels/A.glb" />
-            <img src="./Img/B.png" width="100" height="100" alt="" onclick="image(this.id)" id="./Pannels/B.glb" />
+          <img src="./Img/A.png" width="100" height="100" alt="" onclick="image(this.id)" id="./Pannels/A.glb" />
+          <img src="./Img/B.png" width="100" height="100" alt="" onclick="image(this.id)" id="./Pannels/B.glb" />
         </li>
     </ol>
 
@@ -75,8 +79,6 @@
             console.log(id);
             window.open('copy.html', '_self');
         }
-
-        
     </script>
 </body>
 </html>
