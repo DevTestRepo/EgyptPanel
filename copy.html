@@ -24,7 +24,10 @@
       </div>
       
     </model-viewer> 
-   
+    <script>
+      var id2 = sessionStorage.getItem("id");
+      document.getElementById('color').setAttribute("src",id2)
+       </script>
     <script src="script.js"></script>
 
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
